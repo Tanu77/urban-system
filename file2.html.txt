@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            
+            height: 700px;
+            width: 100%;
+        }
+        .class1-1{
+           
+            height: 10%;
+            width: 80%;
+             margin:auto;
+             margin-top: 20px;
+             margin-bottom: 20px;
+             line-height: 10px;
+             text-align: center;
+
+        }
+        .class1-2{
+            
+            height: 80%;
+            width: 80%;
+             margin:auto;
+             margin-top: 20px;
+             margin-bottom: 20px;
+
+        }
+        .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px;
+        grid-gap: 20px;
+        padding: 20px;
+
+      }
+
+      
+      .container > div > div {
+        padding: 10px;
+        
+      }
+      .colo{
+          color: red;
+          text-align: center;
+          
+      }
+      .test{
+          text-align: center;
+      }
+      
+      
+      @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media only screen and (min-width: 30px) and (max-width: 768px) {
+        .container {
+          width: 100%;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+    </style>
+
+</head>
+<body>
+    <div class="class1">
+        <div class="class1-1">
+            <h1>Certified Teachers</h1>
+            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country </p>
+        </div>
+        <div class="class1-2">
+            <div class="container">
+                <div>
+                  <img src="https://via.placeholder.com/450x200" height="100%" width="100%" />
+                  <div>
+                    <h3 class="test">
+                     Balanca Willson
+                    </h3>
+                    <h5 class="colo">Maths teacher</h5>
+                    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  </div>
+                </div>
+                <div>
+                  <img src="https://via.placeholder.com/450x200" alt="" height="100%" width="100%" />
+                  <div>
+                    <h3 class="test">
+                      Mitch Parker
+                    </h3>
+                    <h5 class="colo">Science teacher</h5>
+                    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  </div>
+                </div>
+                <div>
+                  <img src="https://via.placeholder.com/450x200" alt="" height="100%" width="100%" />
+                  <div>
+                    <h3 class="test">
+                      Stella Smith
+                      </h3>
+                      <h5 class="colo">English teacher</h5>
+                      <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  </div>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/450x200" alt="" height="100%" width="100%" />
+                    <div>
+                      <h3 class="test">
+                        Monshe Hedderson
+                      </h3>
+                      <h5 class="colo">Social teacher</h5>
+                      <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                  </div>
+              </div>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
